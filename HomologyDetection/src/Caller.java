@@ -9,7 +9,7 @@ import htsjdk.samtools.ValidationStringency;
 public class Caller {
 	
 	private static String[] seqName;
-	private static int[] seqSize;	
+	private static int[] seqSize;
 
 	public static void main(String[] args) {
 		
@@ -34,6 +34,7 @@ public class Caller {
 	}
 	
 	public static boolean compareSeq(SamReader samfile) {
+		
 		List<SAMSequenceRecord> seqdict = samfile.getFileHeader().getSequenceDictionary().getSequences();
 		int size=seqdict.size();
 		if(seqName == null){
