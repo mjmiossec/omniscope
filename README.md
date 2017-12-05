@@ -29,4 +29,4 @@ To give a better sense of what the individual peaks look like, the highlighted r
 
 In this second stage, the previously assembled contigs are used to perform directed de novo assemblies of the corresponding species. We construct a De Bruijn graph from the remaining unmapped reads and store it in a Bloom filter (i.e. not mapped to a reference or part of an initial contig). Using either end of an available contigs, we extend our contigs by querying the Bloom filter until they can no longer be extended or connect to another contig. This step is repeated until every contig has been extended as much as possible.
 
-This project, originally conceived as an extension to Pathoscope 2.0, can also work with output from other reference-based programs provided the output is in SAM/BAM format.
+This project, originally conceived as an extension to Pathoscope 2.0, will also work with output from other reference-based programs provided the output is in SAM/BAM format.
